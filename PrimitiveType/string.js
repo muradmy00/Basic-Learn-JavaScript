@@ -37,3 +37,4 @@ var o = 11.5;
 fadd=""+o;
 console.log(parseFloat(fadd));
 
+ 
