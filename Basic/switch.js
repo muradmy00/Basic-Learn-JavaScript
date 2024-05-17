@@ -1,3 +1,16 @@
+switch(number=10){
+    case 8:
+        console.log("Eight");
+        break;
+    case 5:
+        console.log("Five");
+        break;
+    default:
+        console.log("Ten");
+}
+
+
+
 switch(new Date().getDay()){
     case 0:
         day = "Sunday";
