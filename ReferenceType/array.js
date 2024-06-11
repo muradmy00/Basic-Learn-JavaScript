@@ -15,7 +15,6 @@ console.log(index);
 arr.push("Ma");
 console.log(arr);
 
-
 // arr.shift();
 // console.log(arr);
 

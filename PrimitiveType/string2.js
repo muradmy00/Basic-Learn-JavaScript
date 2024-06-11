@@ -7,7 +7,7 @@
   console.log(name.indexOf("Murad"));
 
 
-
+ 
 //Boolean
 
 x=true;
