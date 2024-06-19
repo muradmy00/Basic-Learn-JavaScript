@@ -7,7 +7,9 @@ function fibonacci(n){
     }
 }
 
-for(let i=0;i<=5;i++){
+// console.log(fibonacci(5));
+
+for(let i=0;i<5;i++){
     console.log(fibonacci(i));
 }
 

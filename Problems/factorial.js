@@ -36,4 +36,4 @@ function Rfactorial(n){
     }
 }
 
-console.log(Rfactorial(5));
+console.log(Rfactorial(2));  

@@ -15,11 +15,10 @@ function primeNumber(n){
         return "Prime Number";
     }
     else{
-        for(var i=2;i<n;i++){
+        for(let i=2;i<n;i++){
             if(n%i==0){
                 return "Not a Prime Number";
             }
-
         }
         return "Prime Number";
     }
