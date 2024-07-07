@@ -11,4 +11,6 @@ function budgetCalculator(watch,phone,laptop){
     return budget;
 }
 
+
+
 console.log(budgetCalculator(0,10,0));

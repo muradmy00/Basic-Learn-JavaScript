@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1 id="title">Learning JavaScript DOM</h1>
+
+    <p class="text">Hey,Mom I'm learning JavaScript DOM</p>
+    <p class="text">This is another paragraph</p>
+    <p class="text">This is the last paragraph</p>
+
+    <script>
+
+        // document.getElementsByClassName("text")[0].style.color = "red";
+
+        //  document.getElementsByClassName("text")[1].style.color = "blue";
+
+        //  document.getElementsByClassName("text")[2].style.color = "cyan";
+
+        
+        // using for loop 
+
+         for(var i =0;i<document.getElementsByClassName("text").length;i++){
+            document.getElementsByClassName("text")[i].style.color = "red";
+         }
+
+ 
+
+    </script>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
