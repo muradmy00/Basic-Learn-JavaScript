@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Bubble</title>
+    <style>
+        button{
+            margin-top: 10px;
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+            height: 40px;
+            width: 100px;
+            cursor: pointer;
+        }
+        /* #container{
+            border: 5px solid blue;
+            margin: 30px;
+            padding: 20px;
+        } */
+        #add{
+            background-color: rgb(114, 234, 16);
+            color: #000;
+            /* margin: 30px;
+            padding: 20px; */
+            height: 55px;
+            width: 120px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JS Event Bubble</h1>
+
+    <div id="container">
+        <button class="btn">Delete</button>
+        <br>
+        <button class="btn">Delete</button>
+        <br>
+        <button class="btn">Delete</button>
+        <br>
+        <button class="btn">Delete</button>
+        <br>
+        <button class="btn">Delete</button>
+        <br>
+        <button class="btn">Delete</button>
+
+    </div>
+
+     <button id="add">Add Button</button>
+
+
+    <script>
+
+        document.getElementById("container").addEventListener("click",function(event){
+            event.target.parentNode.removeChild(event.target);
+            event.stopPropagation();
+        })
+
+         document.getElementById("add").addEventListener("click", function (event) {
+            var itemParant = document.getElementById("container");
+
+            var newElement = document.createElement("button");
+
+            newElement.innerHTML = "New Button";
+
+            itemParant.appendChild(newElement);
+            newElement.style.display ="flex";
+            newElement.style.textAlign = "center";
+            newElement.style.height = "40px";
+            newElement.style.width = "100px";
+
+            })
+
+
+
+    </script>
+
+</body>
+
+</html>

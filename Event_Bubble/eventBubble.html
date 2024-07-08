@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Event Bubble</title>
+</head>
+<body>
+
+    <h1>JS Event Bubble</h1>
+
+    <div id="container">
+        <button id="first">Learn More</button>
+
+        <!-- Event Bubble Definition -->
+
+        <!-- jodi sudhu button a click kori Button Clicked and Container Clicked doitai dekhabe othocho Container a amra click kori nai..-->
+
+
+        <!-- Eita ke Solve korar jonno -->
+
+        <!-- stopPropagation() function ta use kora hoi -->
+
+    </div>
+
+
+    <script>
+
+        document.getElementById("first").addEventListener("click",function(){
+            console.log("Button Clicked");
+            event.stopPropagation();
+        })
+
+         document.getElementById("container").addEventListener("click", function () {
+                console.log("Container Clicked");
+            })
+
+
+
+    </script>
+    
+</body>
+</html>

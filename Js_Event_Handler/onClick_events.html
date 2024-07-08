@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events</title>
+</head>
+<body>
+
+    <h1 onClick="simple()">JS Events</h1>
+
+
+    <button onclick="alert(new Date())">Click Me - 1</button>
+
+    <button id="second">Click Me - 2</button>
+    <button id="third">Click Me - 3</button>
+    <button id="fourth">Click Me - 4</button>
+    <button id="last">Click Me - 5</button>
+
+
+    <script>
+
+        function simple(){
+            console.log("I'm being Clicked");
+        }
+        
+        const secondButton = document.getElementById("second");
+        secondButton.onclick = simple;
+
+
+        function bgColor(){
+            document.body.style.backgroundColor = "#00101f";
+
+            document.body.style.color = "white";
+        }
+
+
+        const thirdButton = document.getElementById("third");
+        thirdButton.onclick = bgColor;
+
+
+
+
+        const lastButton = document.getElementById("last").addEventListener("click", function () {
+                document.body.style.backgroundColor = "white";
+
+                document.body.style.color = "black";
+            })
+
+
+             const fourthButton = document.getElementById("fourth").addEventListener("click", function () {
+                    document.body.style.color = "blue";
+                })
+
+    </script>
+    
+</body>
+</html>

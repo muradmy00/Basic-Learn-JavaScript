@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events</title>
+</head>
+
+<body>
+
+    <h1>JS Events</h1>
+
+
+
+    <button id="second">Click Me - 2</button>
+
+
+    <script>
+
+
+        const secondButton = document.getElementById("second");
+
+        secondButton.onmouseenter = bgColor;
+        secondButton.onmouseout = bgColor2;
+
+         function bgColor2() {
+                document.body.style.backgroundColor = "white";
+
+                document.body.style.color = "black";
+            }
+
+        function bgColor() {
+            document.body.style.backgroundColor = "#00101f";
+
+            document.body.style.color = "white";
+        }
+
+    </script>
+
+</body>
+
+</html>
