@@ -35,11 +35,42 @@
   
     <script>
 
+        // only first author has selected
+        
+     document.querySelector(".author").style.color = "red";
+     document.querySelector(".author").style.backgroundColor = "cyan";
+     document.querySelector(".author").style.margin = "15px";
 
-     
+    //  all author are selected are same classname
 
     
-    </script>
+    var authors = document.querySelectorAll(".author");
+
+    for(var i=0;i<authors.length;i++){
+        const element = authors[i];
+        element.style.color = "blue";
+        element.style.backgroundColor = "skyblue";
+        element.style.margin = "15px";
+        element.innerHTML = "Poet"+" "+(i+1);
+    }
+
+
+
+    var article = document.getElementById("first_article");
+    var newArticle = document.createElement("p");
+    newArticle.innerHTML = "This paragraph write by using JS";
+    article.appendChild(newArticle);
+    newArticle.style.color = "red";
+
+
+
+
+
+
+
+
+    
+    </script> 
 
     <!-- <script src="script.js"></script> -->
 </body>

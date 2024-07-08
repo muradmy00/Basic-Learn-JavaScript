@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <h1 id="title">Learning JavaScript DOM</h1>
+
+
+    <h3>Grocery List</h3>
+
+
+    <!-- ul>li{List Item - $}*5 -->
+
+    <ul id="list">
+        <li>List Item - 1</li>
+        <li>List Item - 2</li>
+        <li>List Item - 3</li>
+        <li>List Item - 4</li>
+        <li>List Item - 5</li>
+    </ul>
+ 
+
+
+    <script>
+
+        var ul = document.getElementById("list");
+        var newItem = document.createElement("li");
+        newItem.innerHTML = "List Item - 6";
+        //Add Item
+        ul.appendChild(newItem);
+
+
+        // Remove Item two Way
+
+     ul.style.display = "none";
+    //   ul.parentNode.removeChild(ul);
+ 
+    </script>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
